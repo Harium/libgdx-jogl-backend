@@ -5,6 +5,11 @@ Forked from: [https://github.com/gouessej/libgdx](https://github.com/gouessej/li
 
 Libgdx version: 1.9.7
 
+## Gradle
+```
+compile 'com.harium.propan:propan-gdx-jogl-backend:1.9.7
+```
+
 ## Maven
 ```
 <dependency>
