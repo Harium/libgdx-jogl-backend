@@ -371,7 +371,8 @@ public abstract class JoglGraphicsBase implements Graphics, GLEventListener {
 
 	@Override
 	public GraphicsType getType () {
-		return GraphicsType.Jogl;
+		// TODO Change to JoGL when (if) it is available
+		return GraphicsType.LWJGL;
 	}
 
 	@Override

@@ -22,9 +22,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.harium.propan</groupId>
-            <artifactId>propan-gdx</artifactId>
-            <version>1.1.0</version>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx</artifactId>
+            <version>1.9.7</version>
         </dependency>
         <dependency>
             <groupId>org.jogamp.joal</groupId>
