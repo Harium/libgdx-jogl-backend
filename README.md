@@ -4,3 +4,12 @@ LibGDX JoGL backend
 Forked from: [https://github.com/gouessej/libgdx](https://github.com/gouessej/libgdx)
 
 Libgdx version: 1.9.7
+
+## Maven
+```
+<dependency>
+  <groupId>com.harium.propan</groupId>
+  <artifactId>propan-gdx-jogl-backend</artifactId>
+  <version>1.9.7</version>
+</dependency>
+```
