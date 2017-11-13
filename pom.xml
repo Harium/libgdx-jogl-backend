@@ -14,6 +14,12 @@
         <developerConnection>scm:git:ssh://github.com:harium/propan-gdx-jogl-backend.git</developerConnection>
         <url>http://github.com/harium/propan-gdx-jogl-backend/tree/master</url>
     </scm>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
     <properties>
         <jogamp.version>2.3.2</jogamp.version>
         <javadoc.opts>-Xdoclint:none</javadoc.opts>
