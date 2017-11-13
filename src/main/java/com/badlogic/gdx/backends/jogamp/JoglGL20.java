@@ -31,7 +31,7 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
  * compatible. Some glGetXXX methods are not implemented.
  * 
  * @author mzechner */
-class JoglGL20 implements GL20 {
+public class JoglGL20 implements GL20 {
 
 	public JoglGL20 () {
 	}
