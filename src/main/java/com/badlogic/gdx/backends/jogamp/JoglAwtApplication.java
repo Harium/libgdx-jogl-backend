@@ -25,7 +25,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import com.badlogic.gdx.ApplicationListener;
-import com.badlogic.gdx.ApplicationLogger;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.backends.jogamp.JoglAwtGraphics.JoglAwtDisplayMode;
 import com.badlogic.gdx.utils.Clipboard;
@@ -48,6 +47,10 @@ public class JoglAwtApplication extends JoglApplicationBase {
 
 	public JoglAwtApplication (final ApplicationListener listener, final JoglAwtApplicationConfiguration config) {
 		super(listener, config);
+		initialize(listener, config);
+	}
+
+	protected void initialize(final ApplicationListener listener, final JoglAwtApplicationConfiguration config) {
 		final Runnable runnable = new Runnable() {
 
 			@Override
@@ -56,7 +59,7 @@ public class JoglAwtApplication extends JoglApplicationBase {
 					frame = new Frame(config.title);
 					((JoglAwtGraphics)graphics).getCanvas().setPreferredSize(new Dimension(config.width, config.height));
 					frame.setSize(config.width + frame.getInsets().left + frame.getInsets().right, frame.getInsets().top
-						+ frame.getInsets().bottom + config.height);
+							+ frame.getInsets().bottom + config.height);
 					frame.add(((JoglAwtGraphics)graphics).getCanvas(), BorderLayout.CENTER);
 					frame.setLocationRelativeTo(null);
 					frame.addWindowListener(windowListener);
@@ -69,7 +72,7 @@ public class JoglAwtApplication extends JoglApplicationBase {
 					frame = new Frame(config.title);
 					((JoglAwtGraphics)graphics).getCanvas().setPreferredSize(new Dimension(config.width, config.height));
 					frame.setSize(config.width + frame.getInsets().left + frame.getInsets().right, frame.getInsets().top
-						+ frame.getInsets().bottom + config.height);
+							+ frame.getInsets().bottom + config.height);
 					frame.add(((JoglAwtGraphics)graphics).getCanvas(), BorderLayout.CENTER);
 					frame.setLocationRelativeTo(null);
 					frame.addWindowListener(windowListener);
