@@ -7,7 +7,7 @@ Libgdx version: 1.9.7
 
 ## Gradle
 ```
-compile 'com.harium.propan:propan-gdx-jogl-backend:1.9.7
+compile 'com.harium.propan:propan-gdx-jogl-backend:1.9.7.2
 ```
 
 ## Maven
@@ -15,6 +15,6 @@ compile 'com.harium.propan:propan-gdx-jogl-backend:1.9.7
 <dependency>
   <groupId>com.harium.propan</groupId>
   <artifactId>propan-gdx-jogl-backend</artifactId>
-  <version>1.9.7</version>
+  <version>1.9.7.2</version>
 </dependency>
 ```
