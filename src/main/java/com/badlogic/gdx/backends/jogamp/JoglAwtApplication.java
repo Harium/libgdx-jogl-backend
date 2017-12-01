@@ -80,18 +80,10 @@ public class JoglAwtApplication extends JoglApplicationBase {
                     GraphicsEnvironment genv = GraphicsEnvironment.getLocalGraphicsEnvironment();
                     GraphicsDevice device = getScreen(frame, genv);
 
-                    java.awt.DisplayMode desktopMode = device.getDisplayMode();
                     try {
                         device.setFullScreenWindow(frame);
-                        JoglAwtDisplayMode mode = ((JoglAwtGraphics) graphics).findBestMatch(config.width, config.height);
-                        if (mode == null)
-                            throw new GdxRuntimeException("Couldn't set fullscreen mode " + config.width + "x" + config.height);
-                        device.setDisplayMode(mode.mode);
-
-                        Rectangle bounds = device.getDefaultConfiguration().getBounds();
-                        frame.setBounds(bounds.x, bounds.y, bounds.width, bounds.height);
-
                     } catch (Throwable e) {
+                        java.awt.DisplayMode desktopMode = device.getDisplayMode();
                         e.printStackTrace();
                         device.setDisplayMode(desktopMode);
                         device.setFullScreenWindow(null);
