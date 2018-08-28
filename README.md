@@ -1,20 +1,24 @@
-# propan-gdx-jogl-backend
-LibGDX JoGL backend
+# libgdx-jogl-backend
 
-Forked from: [https://github.com/gouessej/libgdx](https://github.com/gouessej/libgdx)
+Non official LibGDX JoGL backend, it is an experimental backend to
+libgdx based on JoGL, you might experience some crash, if/when it
+happens please open an issue.
 
 Libgdx version: 1.9.7
 
+Forked from: [https://github.com/gouessej/libgdx](https://github.com/gouessej/libgdx)
+
+
 ## Gradle
 ```
-compile 'com.harium.propan:propan-gdx-jogl-backend:1.9.7.2
+compile 'com.harium.gdx:gdx-backend-jogl:1.9.7
 ```
 
 ## Maven
 ```
 <dependency>
-  <groupId>com.harium.propan</groupId>
-  <artifactId>propan-gdx-jogl-backend</artifactId>
-  <version>1.9.7.2</version>
+  <groupId>com.harium.gdx</groupId>
+  <artifactId>gdx-backend-jogl</artifactId>
+  <version>1.9.7</version>
 </dependency>
 ```

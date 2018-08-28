@@ -3,16 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.harium.propan</groupId>
-    <artifactId>propan-gdx-jogl-backend</artifactId>
-    <version>1.9.7.2</version>
+    <groupId>com.harium.gdx</groupId>
+    <artifactId>gdx-backend-jogl</artifactId>
+    <version>1.9.7</version>
+    <properties>
+        <libgdx.version>1.9.7</libgdx.version>
+        <jogamp.version>2.3.2</jogamp.version>
+        <javadoc.opts>-Xdoclint:none</javadoc.opts>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gpg.executable>gpg2</gpg.executable>
+    </properties>
     <name>Propan GDX JoGL</name>
     <description>Libgdx JoGL backend</description>
-    <url>http://github.com/harium/propan-gdx-jogl-backend</url>
+    <url>http://github.com/harium/libgdx-jogl-backend</url>
     <scm>
-        <connection>scm:git:git://github.com/harium/propan-gdx-jogl-backend.git</connection>
-        <developerConnection>scm:git:ssh://github.com:harium/propan-gdx-jogl-backend.git</developerConnection>
-        <url>http://github.com/harium/propan-gdx-jogl-backend/tree/master</url>
+        <connection>scm:git:git://github.com/harium/libgdx-jogl-backend.git</connection>
+        <developerConnection>scm:git:ssh://github.com:harium/libgdx-jogl-backend.git</developerConnection>
+        <url>http://github.com/harium/libgdx-jogl-backend/tree/master</url>
     </scm>
     <licenses>
         <license>
@@ -20,17 +27,11 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-    <properties>
-        <jogamp.version>2.3.2</jogamp.version>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <gpg.executable>gpg2</gpg.executable>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx</artifactId>
-            <version>1.9.7</version>
+            <version>${libgdx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jogamp.joal</groupId>
