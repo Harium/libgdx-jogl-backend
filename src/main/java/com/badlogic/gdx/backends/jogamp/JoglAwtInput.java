@@ -309,6 +309,16 @@ public class JoglAwtInput implements JoglInput, MouseMotionListener, MouseListen
 	}
 
 	@Override
+	public float getPressure() {
+		return getPressure(0);
+	}
+
+	@Override
+	public float getPressure(int pointer) {
+		return isTouched(pointer) ? 1 : 0;
+	}
+
+	@Override
 	public void processEvents () {
 		synchronized (this) {
 			justTouched = false;

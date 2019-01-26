@@ -174,6 +174,16 @@ public class JoglNewtInput implements JoglInput, MouseListener, KeyListener {
 	}
 
 	@Override
+	public float getPressure() {
+		return getPressure(0);
+	}
+
+	@Override
+	public float getPressure(int pointer) {
+		return isTouched(pointer) ? 1 : 0;
+	}
+
+	@Override
 	public void processEvents () {
 		synchronized (this) {
 			justTouched = false;
